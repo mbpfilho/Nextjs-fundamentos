@@ -1,3 +1,5 @@
+import Layout from "../components/Layout"
+
 export default function Jsx(){
   const a=2
   const b=3
@@ -6,10 +8,12 @@ export default function Jsx(){
     return <h3>{"muito legal".toUpperCase()}</h3>
   }
   return (
-    <div>
+    <Layout titulo="Entendendo o JSX">
       {titulo}
       <h2>{a*b}</h2>
       {subtitulo()}
-    </div>
+      <p>{JSON.stringify({nome: "Joäo", idade:30})}</p>
+    </Layout>
+    
   )
 }
