@@ -12,6 +12,8 @@ export default function handler(
 ) {
   res.status(200).json({ 
     name: 'Teste API',
-    method: req.method
+    method: req.method,
+    nome: req.query.nome,
+    idade: +req.query.idade
   })
 }
